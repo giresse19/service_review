@@ -16,4 +16,9 @@ const storeSchema = new mongoose.Schema({
   tags: [String]  
 });
 
+storeSchema.pre('save', function(next) {
+	
+	this.slug = slug(this.name);
+});
+
 module.exports = mongoose.model('Store', storeSchema)
