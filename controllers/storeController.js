@@ -14,3 +14,10 @@ exports.createStore = async (req, res) => {
 	res.redirect(`/store/${store.slug}`);	
 };
 
+exports.getStores = async (req, res) => {
+	// query db for all stores
+	const stores = await Store.find();
+	// console.log(stores); // passing stores variable into stores.pug template
+	res.render('stores', {title: 'Stores', stores: stores }); 
+};
+
