@@ -77,17 +77,18 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 function autocomplete(input, latInput, lngInput) {
-  if (!input) return; // skip this fn from running if there is not input on the page
+  // console.log(input, latInput, lngInput);
+  if (!input) return; // skip this function from runing with no input on the page
   var dropdown = new google.maps.places.Autocomplete(input);
-
   dropdown.addListener('place_changed', function () {
     var place = dropdown.getPlace();
     latInput.value = place.geometry.location.lat();
     lngInput.value = place.geometry.location.lng();
+    console.log(place);
   });
-  // if someone hits enter on the address field, don't submit the form
+  // if someone hits enter, don't submit form..on = addeventlistener
   input.on('keydown', function (e) {
-    if (e.keyCode === 13) e.preventDefault();
+    if (e.keycode === 13) e.preventDefault();
   });
 }
 
