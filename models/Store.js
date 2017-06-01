@@ -21,27 +21,28 @@ const storeSchema = new mongoose.Schema({
   location: {
     type: {
       type: String,
-      default: 'point'
+      default: 'Point'
     },
     coordinates: [{
       type: Number,
-      required: 'You must supply coordinates'
+      required: 'You must supply coordinates!'
     }],
     address: {
-      type:  String,
-      required: 'You must supply an address'
+      type: String,
+      required: 'You must supply an address!'
     }
-  }
+  },
+  photo: String
 });
 
 storeSchema.pre('save', function(next) {
-  if(!this.isModified('name')) {
+  if (!this.isModified('name')) {
     next(); // skip it
-    return; // stop this function
-  }	
-	this.slug = slug(this.name);
+    return; // stop this function from running
+  }
+  this.slug = slug(this.name);
   next();
-  // TODO make more resilient so slugs are unique
+  // TODO make more resiliant so slugs are unique
 });
 
 module.exports = mongoose.model('Store', storeSchema);
