@@ -19,7 +19,14 @@ const userSchema = new Schema({
     type: String,
     required: 'please enter a name',
     trim: true
-  }
+  } 
+  // virtual field must not be in the scheme
+});
+
+userSchema.virtual('gravatar').get(function() {
+  const hash = md5(this.email);
+  return `https://gravatar.com/avatar/${hash}?$=200`
+
 });
 
 userSchema.plugin(passportLocalMongoose, {usernameField: 'email'}); // help us use .register in controler
