@@ -7,7 +7,7 @@
  };
 
  function loadPlaces(map, lat = 43.2, lng = -79.8) {   
-   axios.get(`/api/search/near?lat=${lat}&lng=${lng}`)
+   axios.get(`/api/stores/near?lat=${lat}&lng=${lng}`)
      .then(res => {
        const places = res.data;       
        if(!places.length) {

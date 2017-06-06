@@ -21,7 +21,11 @@ const userSchema = new Schema({
     trim: true
   }, 
   resetPasswordToken: String,
-  resetPasswordExpires: Date  
+  resetPasswordExpires: Date ,
+  hearts: [
+    {  type: mongoose.Schema.ObjectId, ref: 'Store' }
+
+  ] 
 });
 // virtual field must not be in the scheme
 userSchema.virtual('gravatar').get(function() {
