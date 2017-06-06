@@ -1,27 +1,19 @@
 ## What is this?
 
-Just you wait folks!
+Site which allows users with account to upload stores and other users which have account can review and make comments. 
+This stores a later on ranked base on the reviews in real time!
+Only users who added a store can edit it
+Stores can be hearted and number of likes increase in real time.
+Stores can be searched for in the search toolbar by tag (vegetarian, family-friendly, wifi etc), also by location, in the map page.
 
-## Sample Data
 
-To load sample data, run the following command in your terminal:
 
-```bash
-npm run sample
-```
 
-If you have previously loaded in this data, you can wipe your database 100% clean with:
+# don't feel like creating an account ? use my own account
 
-```bash
-npm run blowitallaway
-```
+|name|Email (login)|Password|
+|-----|---|---------|---|
+ |giresse|ajanohpelkins18@gmail.com|bob11|
 
-That will populate 16 stores with 3 authors and 41 reviews. The logins for the authors are as follows:
-
-|Name|Email (login)|Password|
-|---|---|---|
-|Wes Bos|wes@example.com|wes|
-|Debbie Downer|debbie@example.com|debbie|
-|Beau|beau@example.com|beau|
 
 
