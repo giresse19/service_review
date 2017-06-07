@@ -13,7 +13,7 @@ Stores can be searched for in the search toolbar by tag (vegetarian, family-frie
 
 |name|Email (login)|Password|
 |-----|---|---------|---|
- |giresse|ajanohpelkins18@gmail.com|bob11|
+ |giresse|ashubobg@yahoo.co.uk|bob11|
 
 
 
