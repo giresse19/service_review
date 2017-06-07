@@ -50,10 +50,28 @@ exports.createStore = async (req, res) => {
 };
 
 exports.getStores = async (req, res) => {
+  // implementing pagination
+  const page = req.params.page || 1;
+  const limit = 4;
+  const skip = (page * limit) - limit;
 	// query db for all stores
-	const stores = await Store.find();
+	const storesPromise = Store
+    .find()
+    .skip(skip)
+    .limit(limit)
+    .sort({created: 'desc'});
+  const countPromise = Store.count();
+  const [stores, count] = await Promise.all([storesPromise, countPromise]  
+    );
+  const pages = Math.ceil(count/limit);
+  if(!stores.length && skip) {
+    req.flash('info', `Hey! You asked for page ${page}, But that doesn't exist.
+      So i put you on page ${pages}`);
+    res.redirect(`/stores/page/${pages}`);
+    return;
+  }
 	// console.log(stores); // passing stores variable into stores.pug template
-	res.render('stores', {title: 'Stores', stores: stores }); 
+	res.render('stores', {title: 'Stores',  stores, page, pages, count }); 
 };
 
 const confirmedOwner = (store, user) => {
