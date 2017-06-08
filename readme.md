@@ -7,6 +7,12 @@ Stores can be hearted and number of likes increase in real time.
 Stores can be searched for in the search toolbar by tag (vegetarian, family-friendly, wifi etc), also by location, in the map page.
 
 
+|--Supports --|
+- Pagination support
+-authentication and authorizatio
+-email sending
+
+
 
 
 # don't feel like creating an account ? use my own account
