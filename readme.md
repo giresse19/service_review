@@ -1,4 +1,6 @@
 ## What is this?
+ CHECKOUT THE DEPLOYED (PRODUCTION) VERSION WITH THE URL:  https://dang-thats-delicious-klyykmwbkk.now.sh/
+ 
 
 Site which allows users with account to upload stores and other users which have account can review and make comments. 
 This stores a later on ranked base on the reviews in real time!
@@ -20,6 +22,8 @@ Stores can be searched for in the search toolbar by tag (vegetarian, family-frie
 |name|Email (login)|Password|
 |-----|---|---------|---|
  |giresse|ashubobg@yahoo.co.uk|bob11|
+ 
+
 
 
 
