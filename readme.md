@@ -6,15 +6,15 @@
 
 Site which allows users with account to upload stores and other users which have account can review and make comments. 
 These stores are  ranked base on the number of *STAR* reviews in real time!
-Only users who added a store can edit it
-Stores can be hearted and number of likes increase in real time.
-Stores can be searched for in the search toolbar by tag (vegetarian, family-friendly, wifi etc), also by location, in the map page.
+Only users who added a store can edit it.
+Stores can be hearted(like) and number of hearts (likes) increase in real time.
+Stores can be searched for in the search toolbar by tag (vegetarian, family-friendly, wifi etc), also by location, on the map page.
 
 
 |--Features --|
 - Pagination support
--authentication and authorizatio
--email sending
+-authentication and authorization
+-email handling
 
 
 
