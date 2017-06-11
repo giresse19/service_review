@@ -1,7 +1,7 @@
 
  CHECKOUT THE DEPLOYED (PRODUCTION) VERSION WITH THE URL:  https://dang-thats-delicious-klyykmwbkk.now.sh/
   ## WHo made this:
-  This project was the fianl outcome of the learn node master paid course which i independently took online: https://learnnode.com/
+  This project, is the final outcome of the learn node master paid course which i independently took online: https://learnnode.com/ . Therefore it was developed by me with guidance from the instructor.
  ## What is this?
 
 Site which allows users with account to upload stores and other users which have account can review and make comments. 
