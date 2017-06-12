@@ -19,7 +19,7 @@ Stores can be searched for in the search toolbar by tag (vegetarian, family-frie
 
 
 
-# don't feel like creating an account ? use my own account
+# don't feel like creating an account ? use my own account to experience all the features of the site
 
 |name|Email (login)|Password|
 |-----|---|---------|---|
